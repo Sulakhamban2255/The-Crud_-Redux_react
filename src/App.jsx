@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import DisplayUser from "./Pages/DisplayUser";
 import { Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import AddUser from "./Pages/addUser";
+import AddUser from "./Pages/AddUser1";
 
 function App() {
   return (
@@ -14,13 +14,11 @@ function App() {
       <Header />
       <Container className="justify-content-center">
         <Routes>
-          <Route  path="/" element={<AddUser />} />
+          <Route path="/" element={<AddUser />} />
           <Route path="/display" element={<DisplayUser />} />
         </Routes>
-       
       </Container>
       <Footer />
-     
     </>
   );
 }
